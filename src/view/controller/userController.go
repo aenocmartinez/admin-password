@@ -53,7 +53,6 @@ func ActiveUser(c *gin.Context) {
 }
 
 func ViewUser(c *gin.Context) {
-	// var strId string = c.Param("id")
 	var strId string = c.Query("id")
 	if len(strId) == 0 {
 		c.JSON(http.StatusBadRequest, gin.H{"error": "parámetro no válido"})

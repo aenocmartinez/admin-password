@@ -38,7 +38,11 @@ func main() {
 	r.GET("/user", controller.ViewUser)
 	r.PUT("/reset-password", controller.ResetPassword)
 
+	r.GET("/passwords", controller.PasswordList)
 	r.POST("/password", controller.CreatePassword)
+	r.GET("/password", controller.FindPasswordById)
+	r.PUT("/password", controller.UpdatePassword)
+	r.DELETE("/password", controller.DeletePassword)
 
 	r.Run(":8083")
 }

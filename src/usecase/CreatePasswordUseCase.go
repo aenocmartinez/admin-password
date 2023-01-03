@@ -8,7 +8,7 @@ import (
 
 type CreatePasswordUseCase struct{}
 
-func (useCase *CreatePasswordUseCase) Execute(createPassword dto.CreatePasswordDTO) (passwordDto dto.PasswordDTO, err error) {
+func (useCase *CreatePasswordUseCase) Execute(createPassword dto.PasswordDTO) (passwordDto dto.PasswordDTO, err error) {
 
 	var repository domain.RepositoryPassword = dao.NewPasswordDAO()
 
