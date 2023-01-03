@@ -1,7 +1,0 @@
-  database:
-    driver: "mysql"
-    port: 3306
-    user: "usr_app_password"
-    pass: "M!XKToEY(jCG7TiG"
-    name: "abix_app_password"
-    host: "127.0.0.1"
