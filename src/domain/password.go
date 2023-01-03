@@ -89,3 +89,23 @@ func (p *Password) Save() error {
 	p.WithId(password.Id())
 	return nil
 }
+
+func (p *Password) Update() error {
+	_, err := p.repository.Update(*p)
+	if err != nil {
+		return err
+	}
+	return nil
+}
+
+func (p *Password) Delete() error {
+	return p.repository.Delete(*p)
+}
+
+func PasswordList(repository RepositoryPassword) ([]Password, error) {
+	return repository.All()
+}
+
+func FindPasswordById(id int64, repository RepositoryPassword) (Password, error) {
+	return repository.FindById(id)
+}
