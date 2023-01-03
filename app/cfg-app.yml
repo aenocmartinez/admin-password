@@ -1,0 +1,11 @@
+jwt:
+  secret: "hziH0sLNa#64BPAynRq2HjY5Zdp39M"
+appauth:
+  server: http://localhost:8080/abix360/v1
+  validateToken: validate-token
+  allUsers: users
+  createUser: register
+  activateUser: activate-user
+  findUser: user
+  unsuscribe: unsuscribe
+  resetPassword: reset-password
